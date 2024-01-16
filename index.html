@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web</title>
+    <link rel="stylesheet" href="estiloS.css">
+</head>
+<body>
+    <!-- MENU PRINCIPAL -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Soluciones Flamir</a>
+                <h1>ESTAMOS EN PROCESO DE MANTENIMIENTO ES ESTOS MOMENTOS</h1>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()">NOSOTROS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- MENU SELECCION DE INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/organizacion.jpg" alt="">
+            </div>
+            <h1>Equipo Flamir</h1>
+            <h2>Expertos en Soluciones Tecnologicas</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION ACERCA DE FLAMIR -->
+    <section id="nosotros" class="nosotros">
+        <div class="contenido-seccion">
+            <h2>Acerca de nosotros</h2>
+            <p><span>Hola, Somos Soluciones Flamir.</span> Nos desempeñamos en el sector informatico especializado en brindar soporte y mejoras a sistemas corporativos</p>
+
+            <div class="fila">
+                <!-- datos importantes -->
+                <div class="col">
+                    <h3>Datos Importantes</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfonos</strong>
+                            997378320
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            flamirsoluciones@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Por agregar
+                        </li>
+                        <li>
+                            <strong>Especialidad</strong>
+                            <span>Soluciones Informaticas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Remitente">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Correo Electrónico">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- SECCION MAPA LOCACION -->
+                <div class="col">
+                    <img src="img/mapa_locacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Lima - Perú
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +51997378320
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: solucionesflamir@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
